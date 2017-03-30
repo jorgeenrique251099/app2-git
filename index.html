@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+	<!--grupo CSS-->
+    <link rel="stylesheet" href="css/tema-app1.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script> 
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/acciones.js"></script>
+    <script src="phonegap.js"></script>
+    <script type="text/javascript">
+	
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+    
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/iphone2.png','imagenes/g2.png')">
+
+	<div data-role="page" id="Principal" data-theme="a">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        	<h1>Telefonía Celular</h1>
+		</div>
+        <div data-role="main" class="ui-content">
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1>Iphone 7</h1>
+            		<div>
+                    	<p>Este es el nuevo Iphone 7</p>
+                    	<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/iphone2.png',1)"><img src="imagenes/iphone1.png" width="468" height="600" id="Image4"></a></p>
+                        <br>
+                    </div>
+ 					<div></div>                       
+            </div>     
+         </div>    
+          <div data-role="main" class="ui-content">
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1>Google Pixel</h1>
+            		<div>
+                    	<p>Este es el nuevo Google Pixel</p>
+                    	<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/g2.png',1)"><img src="imagenes/g1.png" width="500" height="550" id="Image5"></a></p>
+                        <br>
+                    </div>
+ 					<div></div>                       
+            </div>     
+         </div>    
+         <div>
+         	<ul data-role="listview" data-theme="b" class="ui.listview ui-group-theme-b">
+            <li class="ui-first-child ui-last-child">
+            	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                	<h2>DEFINICIÓN DE TELÉFONO CELULAR</h2>
+                	<p>Se muestra la definicion del telefono celular con imagenes</p>
+                </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+            		<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                		<h2>HISTORIA DE LA TELEFONÍA CELULAR</h2>
+                		<p>Se muestra la historia de la telefonia celular con imagenes</p>
+                	</a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+            	 <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               		 <h2>CLASIFICACIÓN CELULARES</h2>
+               		 <p>Muestra la calsificacion por gamas de los telefonos celulares</p>
+               	 </a>
+            </li>
+			<li class="ui-first-child ui-last-child">
+            	 <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               		 <h2>COMPAÑIAS CELULARES</h2>
+               		 <p>Muestra algunas compañias que ofrecen servicio de telefonia celular en Mexico</p>
+               	 </a>
+            </li>
+            </ul>
+         </div> 
+         <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+         	<div>
+            <br>
+            	<img src="imagenes/logo.png" width="46" height="46">
+            </div>
+            <div>
+            	<h4>Aplicacion Dos</h4>
+                <h4>Jorge Enrique Macias Cruz</h4>
+            </div>
+            </div>
+         </div>
+         <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+         	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+            	<h1>DEFINICIÓN</h1>
+            </div>
+            <div data-role="content" align="center">
+            	<div>
+                	<h2>Se conoce como celular al dispositivo inalámbrico electrónico que está preparado para tener acceso a la telefonía celular, también conocida como móvil.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Teléfono celular </p>
+                    	<p><img src="imagenes/1.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>   
+            <div>
+                	<h2>El rasgo diferencial que ostenta el teléfono celular por sobre los otros tipos de teléfono es su fácil portación, en la cartera, en el bolso, incluso en los bolsillos del pantalón o pollera, los seres humanos que formamos parte de esta comunidad conectada celularmente podemos llevar con nosotros y a cualquier lado este tipo de teléfono porque no pesan casi nada.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Tamaño</p>
+                    	<p><img src="imagenes/2.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>
+            <div>
+                	<h2>Hoy en día y especialmente aquellas versiones de teléfonos más sofisticadas e innovadoras, además permiten conectarse y navegar a través de internet, tomar fotografías, videos, reproducir música e imágenes e incluso mantenernos al tanto de aquellas tareas que debemos realizar gracias a la agenda que viene integrada a la mayoría de estos aparatos.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Funcionalidad del Teléfono celular</p>
+                    	<p><img src="imagenes/3.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>  
+         </div>    
+            <div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+            <div>
+            <br>
+            	<img src="imagenes/logo.png" width="46" height="46">
+            </div>
+            	<h4>APP2 <br><br> JEMC</h4>
+            </div>
+         </div>
+         
+         
+         <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+         	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+            	<h1>HISTORIA</h1>
+            </div>
+            <div data-role="content" align="center">
+            	<div>
+                	<h2>De acuerdo a la opinión de los expertos, los pioneros en el ámbito de la telefonía móvil para uso civil comenzaron a transitar su camino de desarrollo en la lejana década de los 40, cuando en Estados Unidos se vislumbraron las grandes ventajas que podían llegar a reportar el uso de este tipo de tecnología en la vida cotidiana de los ciudadanos. 
+
+Así fue que en el ocaso de los años 40 comenzaron a utilizarse sistemas de radio analógicos, lo cuales trabajaban mediante la modulación en amplitud, es decir en frecuencias AM, para luego comenzar a utilizar modulación en frecuencia, es decir ondas FM, logrando de esta manera un mayor rango de alcance y precisión del servicio. 
+
+En aquellos primeros tiempos, eran utilizadas las bandas de HF y VHF, con el fin de ofrecerle a la población un medio de comunicación móvil, que podían llevar consigo al salir de sus casas y oficinas, lo que implicaba lograr mantener una comunicación constante.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Pionero en los Teléfonos celulares</p>
+                    	<p><img src="imagenes/4.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>   
+            <div>
+                	<h2>Por lo general, este tipo de aparatos eran diseñados para ser utilizados sólo en automóviles, ya que se instalaba el equipo de radio dentro del baúl del vehículo, desde donde salía un cable que comunicaba el auricular telefónico dentro de la cabina del conductor. 
+
+A pesar de su escasa popularidad, estos equipos se mantuvieron vigentes durante varias décadas, precisamente desde el año 1946 hasta 1985, cuando finalmente llegaron importantes cambios tecnológicos al mercado, que lograron hacer evolucionar las comunicaciones móviles a pasos agigantados.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Teléfono de Auto</p>
+                    	<p><img src="imagenes/5.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>
+            <div>
+                	<h2>1G: La primera generación.<br><br>En la década de los 80s estos aparatos representaron una evolución sin precedentes dentro de las comunicaciones móviles, y para su época significaron un gran avance, ya que a partir de la denominada primera generación, las terminales se volvieron más pequeñas, lo que permitía que los usuarios pudieran trasladar sus equipos de comunicación. La llegada de la Primera Generación sucedió en el año 1981, cuando la prestigiosa compañía Ericsson lanzó el sistema Nordic Mobile Telephony de 450 MHz, conocido por sus siglas NMT 450, el cual operaba mediante la utilización de canales de radio analógicos, a través de modulación en frecuencia FM. De esta forma, surgió el primer paso para lograr alcanzar los modernos y sofisticados sistemas de telefonía móvil que se utilizan en la actualidad. <br><br> 2G: La segunda generación. <br><br> El origen del sistema 2G tuvo lugar en la década de los 90s, cuando se incorporaron diferentes tecnologías para mejorar las comunicaciones móviles, entre las que se incluyeron los sistemas GSM, IS-136, iDEN e IS-95. Cabe destacar que el cambio de 1G a 2G significó un importante paso en el mundo de la telefonía móvil, ya que las comunicaciones lograron alcanzar una calidad destacada, gracias a la utilización de las frecuencias de 900 y 1800 MHz.
+No obstante, su punto más significativo fue sin lugar a dudas el paso hacia la digitalización de las comunicaciones, con lo que la telefonía móvil logró alcanzar una excelente calidad de voz, realmente superior a las comunicaciones analógicas. <br><br> 3G: La tercera generación. <br><br> Con el advenimiento de la Tercera Generación, fruto de la investigación para lograr aumentar la capacidad de transmisión y recepción de datos, además de obtener un mejor grado de seguridad en las comunicaciones, fue posible poder contar con la posibilidad de conectarse a Internet con todas las ventajas que su utilización provee para los usuarios. Para su funcionamiento, el sistema UMTS se basa en la utilización de la tecnología CDMA, lo que le permite desarrollar tasas de transmisión de datos de hasta 7.2 Mbits/s <br><br> 4G: La cuarta generación <br><br> La llegada al mercado de esta tecnología le ofrece al usuario una experiencia de uso absolutamente exitosa con cualquier prestación que solicite, incluyendo la inscripción a servicios como Spotify, Netfix o Google Music para disfrutar de contenidos de audio y series o películas en alta definición y sin cortes, todo gracias a la alta velocidad que puede alcanzar el estándar, y sin necesidad de contar con una fuente de señal Wi-Fi cercana.
+</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Evolución del Teléfono celular</p>
+                    	<p><img src="imagenes/6.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>  
+         </div>    
+            <div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+            <div>
+            <br>
+            	<img src="imagenes/logo.png" width="46" height="46">
+            </div>
+            	<h4>APP2 <br><br> JEMC</h4>
+            </div>
+         </div>
+         
+         
+         <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+         	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+            	<h1>CLASIFICACIÓN</h1>
+              </div>
+            <div data-role="content" align="center">
+            	<div>
+                	<h2>Existen 3 tipos de gamas para clasificar a los teléfonos celulares. Cada una de ellas los "agrupa" a partir de sus características técnicas como: Características físicas (metal, plástico,), Características internas (RAM, Procesador, etc.), Software (IOS, Android, etc.),Precio. <br><br> GAMA BAJA <br><br> Aquí encontramos a todos los smartphones de bajo costo y con características técnicas "suficientes ", muchos de ellos que se encuentran en el mercadoson chinos</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Xiaomi Redmi Pro</p>
+                    	<p><img src="imagenes/7.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>   
+            <div>
+                	<h2> <br><br>GAMA MEDIA<br><br> La conforman, todos aquellos dispositivos móviles que rondan la media de precio con respecto a las otras dos gamas. Podemos encontrar excelentes celulares calidad-precio ya que algunos de ellos incluyen procesadores de dispositivos gama alta de años anteriores o incluso lo son, pero debido a fallos de construcción o poca demanda descienden rápidamente.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Motorola G4 PLUS</p>
+                    	<p><img src="imagenes/8.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>
+            <div>
+                	<h2> <br><br>GAMA ALTA<br><br> Aquí encontramos a los mejores celulares y con mejores prestaciones que lanzan las grandes compañías, estos dispositivos se caracterizan por su poderoso Hardware y elegante diseño, además de que cada uno de ellos, al salir,  trata de sacar algo innovador y diferente a los demás, como nuevos procesadores, resistencias o software.</h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1></h1>
+            		<div>
+                    	<p>Samsung Galaxy S8</p>
+                    	<p><img src="imagenes/9.jpg"></p>
+                        <br>
+                    </div>                    
+            </div>  
+         </div>    
+            <div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+            <div>
+            <br>
+            	<img src="imagenes/logo.png" width="46" height="46">
+            </div>
+            	<h4>APP2 <br><br> JEMC</h4>
+            </div>
+         </div>
+         
+         
+         <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+         	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+            	<h1>COMPAÑIAS CELULARES</h1>
+            </div>
+            <div data-role="content" align="center">
+            	<div>
+                	<h2>Una de las primeras compañías que se inició dentro del mercado de la telefonía móvil de aquellos tiempos fue la norteamericana Bell, mediante su novedoso servicio denominado Bell System Service.<br>Algunas de las copañias telefónicas más populares en México son: </h2>
+                </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1>TELCEL</h1>
+            		<div>
+                    	<p>Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V.. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios. Es subsidiaria de la empresa mexicana América Móvil, (una filial de Grupo Carso), fundada en 1984, es la compañía celular en México más pooular. Actualmente ofrece cobertura en Telcel 3G (desde finales de 2007) y 4GLTE (desde 6 de noviembre de 2012)</p>
+                    	<p><a href="http://www.telcel.com/"><img src="imagenes/10.png"></a></p>
+                        <br>
+                    </div>                    
+            </div>   
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1>MOVISTAR</h1>
+            		<div>
+                    	<p>Movistar es la marca comercial de la multinacional española de telecomunicaciones Telefónica en España e Hispanoamérica, desde el 3 de mayo de 2010, para sus productos de telefonía fija, móvil, internet y televisión.</p>
+						<p><a href="http://www.movistar.com.mx/"><img src="imagenes/11.jpg"></a></p>
+                        <br>
+                    </div>                    
+            </div>
+        	<div data-role="collapsible" data-content-theme="false">
+            	<h1>UNEFON</h1>
+            		<div>
+                    	<p>Unefón es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago, fundada en 1998</p>
+						<p><a href="https://www.unefon.com.mx/"><img src="imagenes/12.png"></a></p>
+                        <br>
+                    </div>                    
+            </div>  
+            <div data-role="collapsible" data-content-theme="false">
+            	<h1>AT&T</h1>
+            		<div>
+                    	<p>AT&T México es una empresa mexicana de telecomunicaciones, subsidiaria de la empresa estadounidense AT&T, cuya sede se encuentra en la Ciudad de México, recientemente fundada en 2015 (en México)</p>
+                    	<p><a href="https://www.att.com.mx/"><img src="imagenes/13.png"></a></p>
+                        <br>
+                    </div>                    
+            </div>  
+         </div>    
+            <div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+            <div>
+            <br>
+            	<img src="imagenes/logo.png" width="46" height="46">
+            </div>
+            	<h4>APP2 <br><br> JEMC</h4>
+            </div>
+         </div>
+         
+
+       
+
+
+</body>
+</html>
